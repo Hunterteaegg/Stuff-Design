@@ -1,0 +1,6 @@
+lcd1602.c:14:6:lcd_write	16	static
+lcd1602.c:26:6:lcd_writeCom	16	static
+lcd1602.c:40:6:lcd_writeData	16	static
+lcd1602.c:54:6:lcd_init	8	static
+lcd1602.c:63:6:lcd_temp_show	16	static
+lcd1602.c:74:6:lcd_press_show	16	static
