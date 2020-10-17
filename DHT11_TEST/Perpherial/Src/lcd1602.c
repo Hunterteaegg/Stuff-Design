@@ -59,10 +59,34 @@ void lcd_init(void)
 	lcd_writeCom(0X80);
 }
 
-void lcd_show(uint8_t result)
+void lcd_show_dht11(uint8_t *result)
 {
-	lcd_writeData((result / 100)+48);
+	lcd_writeData((result[0] / 10)+48);
+	lcd_writeData((result[0] % 10)+48);
+	lcd_writeData('%');
+	lcd_writeData(' ');
+
+	lcd_writeData((result[2] / 10)+48);
+	lcd_writeData((result[2] % 10)+48);
+	lcd_writeData('.');
+	lcd_writeData((result[3] / 100)+48);
+	lcd_writeData((result[3] % 100 / 10)+48);
+	lcd_writeData((result[3] % 10)+48);
+	lcd_writeData(0xEB);
+	lcd_writeData('C');
+
+	HAL_Delay(1000);
+}
+
+void lcd_show_gy30(uint16_t result)
+{
+	lcd_writeData((result / 10000)+48);
+	lcd_writeData((result % 10000 /1000)+48);
+	lcd_writeData((result % 1000 / 100)+48);
 	lcd_writeData((result % 100 / 10)+48);
 	lcd_writeData((result % 10)+48);
+	lcd_writeData('L');
+	lcd_writeData('x');
+
 	HAL_Delay(1000);
 }

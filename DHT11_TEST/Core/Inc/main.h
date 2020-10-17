@@ -34,6 +34,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "lcd1602.h"
 #include "dht11.h"
+#include "gy30.h"
 #include <string.h>
 /* USER CODE END Includes */
 

@@ -10,7 +10,7 @@
 
 #define CPU_FREQUENCY_MHZ 72
 
-uint8_t data[5]={
+uint8_t dht11_data[5]={
 		0,0,0,0,0,
 };
 uint8_t count=1;
@@ -66,7 +66,7 @@ void DHT11_read(void)
 
 		for(uint8_t i=0;i<5;i++)
 		{
-			data[i]=DHT11_readByte();
+			dht11_data[i]=DHT11_readByte();
 		}
 	}
 

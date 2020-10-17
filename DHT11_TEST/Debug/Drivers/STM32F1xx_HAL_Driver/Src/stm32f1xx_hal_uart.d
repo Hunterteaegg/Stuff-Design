@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o: \
+ ../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -24,12 +25,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/lcd1602.h \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/dht11.h \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/gy30.h
-
-../Core/Inc/main.h:
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 
@@ -82,9 +78,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
-
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/lcd1602.h:
-
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/dht11.h:
-
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/gy30.h:
