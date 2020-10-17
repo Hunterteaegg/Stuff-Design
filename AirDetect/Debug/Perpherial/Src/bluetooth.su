@@ -1,0 +1,2 @@
+bluetooth.c:18:6:bluetooth_transmit_humi	16	static
+bluetooth.c:31:6:bluetooth_transmit	8	static
