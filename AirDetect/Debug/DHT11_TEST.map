@@ -3075,7 +3075,7 @@ LOAD d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externa
                 0x0000000008000000                g_pfnVectors
                 0x000000000800010c                . = ALIGN (0x4)
 
-.text           0x000000000800010c     0x3aa0
+.text           0x000000000800010c     0x3cb4
                 0x000000000800010c                . = ALIGN (0x4)
  *(.text)
  .text          0x000000000800010c       0x40 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
@@ -3372,129 +3372,137 @@ LOAD d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externa
  .text.UART_SetConfig
                 0x00000000080033ec      0x11c Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
  .text.bluetooth_transmit_humi
-                0x0000000008003508       0x70 Perpherial/Src/bluetooth.o
+                0x0000000008003508       0x74 Perpherial/Src/bluetooth.o
                 0x0000000008003508                bluetooth_transmit_humi
+ .text.bluetooth_transmit_temp
+                0x000000000800357c       0xd4 Perpherial/Src/bluetooth.o
+                0x000000000800357c                bluetooth_transmit_temp
+ .text.bluetooth_transmit_luminance
+                0x0000000008003650      0x10c Perpherial/Src/bluetooth.o
+                0x0000000008003650                bluetooth_transmit_luminance
  .text.bluetooth_transmit
-                0x0000000008003578       0x20 Perpherial/Src/bluetooth.o
-                0x0000000008003578                bluetooth_transmit
+                0x000000000800375c       0x50 Perpherial/Src/bluetooth.o
+                0x000000000800375c                bluetooth_transmit
  .text.delay_us
-                0x0000000008003598       0x38 Perpherial/Src/dht11.o
-                0x0000000008003598                delay_us
+                0x00000000080037ac       0x38 Perpherial/Src/dht11.o
+                0x00000000080037ac                delay_us
  .text.DHT11_readByte
-                0x00000000080035d0       0x94 Perpherial/Src/dht11.o
-                0x00000000080035d0                DHT11_readByte
+                0x00000000080037e4       0x94 Perpherial/Src/dht11.o
+                0x00000000080037e4                DHT11_readByte
  .text.DHT11_read
-                0x0000000008003664       0xc0 Perpherial/Src/dht11.o
-                0x0000000008003664                DHT11_read
+                0x0000000008003878       0xc0 Perpherial/Src/dht11.o
+                0x0000000008003878                DHT11_read
  .text.GY30_read
-                0x0000000008003724       0x5c Perpherial/Src/gy30.o
-                0x0000000008003724                GY30_read
+                0x0000000008003938       0x5c Perpherial/Src/gy30.o
+                0x0000000008003938                GY30_read
  .text.lcd_write
-                0x0000000008003780       0xc8 Perpherial/Src/lcd1602.o
-                0x0000000008003780                lcd_write
+                0x0000000008003994       0xc8 Perpherial/Src/lcd1602.o
+                0x0000000008003994                lcd_write
  .text.lcd_writeCom
-                0x0000000008003848       0x5c Perpherial/Src/lcd1602.o
-                0x0000000008003848                lcd_writeCom
+                0x0000000008003a5c       0x5c Perpherial/Src/lcd1602.o
+                0x0000000008003a5c                lcd_writeCom
  .text.lcd_writeData
-                0x00000000080038a4       0x5c Perpherial/Src/lcd1602.o
-                0x00000000080038a4                lcd_writeData
+                0x0000000008003ab8       0x5c Perpherial/Src/lcd1602.o
+                0x0000000008003ab8                lcd_writeData
  .text.lcd_init
-                0x0000000008003900       0x26 Perpherial/Src/lcd1602.o
-                0x0000000008003900                lcd_init
- *fill*         0x0000000008003926        0x2 
+                0x0000000008003b14       0x26 Perpherial/Src/lcd1602.o
+                0x0000000008003b14                lcd_init
+ *fill*         0x0000000008003b3a        0x2 
  .text.lcd_show_dht11
-                0x0000000008003928      0x120 Perpherial/Src/lcd1602.o
-                0x0000000008003928                lcd_show_dht11
+                0x0000000008003b3c      0x120 Perpherial/Src/lcd1602.o
+                0x0000000008003b3c                lcd_show_dht11
  .text.lcd_show_gy30
-                0x0000000008003a48       0xf4 Perpherial/Src/lcd1602.o
-                0x0000000008003a48                lcd_show_gy30
+                0x0000000008003c5c       0xf4 Perpherial/Src/lcd1602.o
+                0x0000000008003c5c                lcd_show_gy30
  .text.__libc_init_array
-                0x0000000008003b3c       0x48 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
-                0x0000000008003b3c                __libc_init_array
- .text.memset   0x0000000008003b84       0x10 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
-                0x0000000008003b84                memset
+                0x0000000008003d50       0x48 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+                0x0000000008003d50                __libc_init_array
+ .text.memset   0x0000000008003d98       0x10 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+                0x0000000008003d98                memset
  *(.glue_7)
- .glue_7        0x0000000008003b94        0x0 linker stubs
+ .glue_7        0x0000000008003da8        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008003b94        0x0 linker stubs
+ .glue_7t       0x0000000008003da8        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008003b94        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ .eh_frame      0x0000000008003da8        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
  *(.init)
- .init          0x0000000008003b94        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
-                0x0000000008003b94                _init
- .init          0x0000000008003b98        0x8 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+ .init          0x0000000008003da8        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+                0x0000000008003da8                _init
+ .init          0x0000000008003dac        0x8 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
  *(.fini)
- .fini          0x0000000008003ba0        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
-                0x0000000008003ba0                _fini
- .fini          0x0000000008003ba4        0x8 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
-                0x0000000008003bac                . = ALIGN (0x4)
-                0x0000000008003bac                _etext = .
+ .fini          0x0000000008003db4        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crti.o
+                0x0000000008003db4                _fini
+ .fini          0x0000000008003db8        0x8 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
+                0x0000000008003dc0                . = ALIGN (0x4)
+                0x0000000008003dc0                _etext = .
 
-.vfp11_veneer   0x0000000008003bac        0x0
- .vfp11_veneer  0x0000000008003bac        0x0 linker stubs
+.vfp11_veneer   0x0000000008003dc0        0x0
+ .vfp11_veneer  0x0000000008003dc0        0x0 linker stubs
 
-.v4_bx          0x0000000008003bac        0x0
- .v4_bx         0x0000000008003bac        0x0 linker stubs
+.v4_bx          0x0000000008003dc0        0x0
+ .v4_bx         0x0000000008003dc0        0x0 linker stubs
 
-.iplt           0x0000000008003bac        0x0
- .iplt          0x0000000008003bac        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+.iplt           0x0000000008003dc0        0x0
+ .iplt          0x0000000008003dc0        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
 
-.rodata         0x0000000008003bac       0x2c
-                0x0000000008003bac                . = ALIGN (0x4)
+.rodata         0x0000000008003dc0       0x3c
+                0x0000000008003dc0                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0000000008003bac       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .rodata        0x0000000008003dc0       0x12 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ *fill*         0x0000000008003dd2        0x2 
+ .rodata        0x0000000008003dd4        0xf Perpherial/Src/bluetooth.o
  *(.rodata*)
- *fill*         0x0000000008003bbe        0x2 
+ *fill*         0x0000000008003de3        0x1 
  .rodata.AHBPrescTable
-                0x0000000008003bc0       0x10 Core/Src/system_stm32f1xx.o
-                0x0000000008003bc0                AHBPrescTable
+                0x0000000008003de4       0x10 Core/Src/system_stm32f1xx.o
+                0x0000000008003de4                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008003bd0        0x8 Core/Src/system_stm32f1xx.o
-                0x0000000008003bd0                APBPrescTable
-                0x0000000008003bd8                . = ALIGN (0x4)
+                0x0000000008003df4        0x8 Core/Src/system_stm32f1xx.o
+                0x0000000008003df4                APBPrescTable
+                0x0000000008003dfc                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008003bd8        0x0
- .rel.iplt      0x0000000008003bd8        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+.rel.dyn        0x0000000008003dfc        0x0
+ .rel.iplt      0x0000000008003dfc        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
 
-.ARM.extab      0x0000000008003bd8        0x0
-                0x0000000008003bd8                . = ALIGN (0x4)
+.ARM.extab      0x0000000008003dfc        0x0
+                0x0000000008003dfc                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008003bd8                . = ALIGN (0x4)
+                0x0000000008003dfc                . = ALIGN (0x4)
 
-.ARM            0x0000000008003bd8        0x0
-                0x0000000008003bd8                . = ALIGN (0x4)
-                0x0000000008003bd8                __exidx_start = .
+.ARM            0x0000000008003dfc        0x0
+                0x0000000008003dfc                . = ALIGN (0x4)
+                0x0000000008003dfc                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008003bd8                __exidx_end = .
-                0x0000000008003bd8                . = ALIGN (0x4)
+                0x0000000008003dfc                __exidx_end = .
+                0x0000000008003dfc                . = ALIGN (0x4)
 
-.preinit_array  0x0000000008003bd8        0x0
-                0x0000000008003bd8                . = ALIGN (0x4)
-                0x0000000008003bd8                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008003dfc        0x0
+                0x0000000008003dfc                . = ALIGN (0x4)
+                0x0000000008003dfc                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008003bd8                PROVIDE (__preinit_array_end = .)
-                0x0000000008003bd8                . = ALIGN (0x4)
+                0x0000000008003dfc                PROVIDE (__preinit_array_end = .)
+                0x0000000008003dfc                . = ALIGN (0x4)
 
-.init_array     0x0000000008003bd8        0x4
-                0x0000000008003bd8                . = ALIGN (0x4)
-                0x0000000008003bd8                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008003dfc        0x4
+                0x0000000008003dfc                . = ALIGN (0x4)
+                0x0000000008003dfc                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008003bd8        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
-                0x0000000008003bdc                PROVIDE (__init_array_end = .)
-                0x0000000008003bdc                . = ALIGN (0x4)
+ .init_array    0x0000000008003dfc        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+                0x0000000008003e00                PROVIDE (__init_array_end = .)
+                0x0000000008003e00                . = ALIGN (0x4)
 
-.fini_array     0x0000000008003bdc        0x4
-                0x0000000008003bdc                . = ALIGN (0x4)
+.fini_array     0x0000000008003e00        0x4
+                0x0000000008003e00                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003bdc        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ .fini_array    0x0000000008003e00        0x4 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008003be0                . = ALIGN (0x4)
-                0x0000000008003be0                _sidata = LOADADDR (.data)
+                0x0000000008003e04                . = ALIGN (0x4)
+                0x0000000008003e04                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x18 load address 0x0000000008003be0
+.data           0x0000000020000000       0x38 load address 0x0000000008003e04
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -3512,52 +3520,64 @@ LOAD d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externa
  .data.string_humidity
                 0x000000002000000c        0xa Perpherial/Src/bluetooth.o
                 0x000000002000000c                string_humidity
- .data.space    0x0000000020000016        0x1 Perpherial/Src/bluetooth.o
-                0x0000000020000016                space
- .data.count    0x0000000020000017        0x1 Perpherial/Src/dht11.o
-                0x0000000020000017                count
-                0x0000000020000018                . = ALIGN (0x4)
-                0x0000000020000018                _edata = .
+ *fill*         0x0000000020000016        0x2 
+ .data.string_temperature
+                0x0000000020000018        0xd Perpherial/Src/bluetooth.o
+                0x0000000020000018                string_temperature
+ *fill*         0x0000000020000025        0x3 
+ .data.string_luminance
+                0x0000000020000028        0xb Perpherial/Src/bluetooth.o
+                0x0000000020000028                string_luminance
+ .data.line_feed
+                0x0000000020000033        0x1 Perpherial/Src/bluetooth.o
+                0x0000000020000033                line_feed
+ .data.space    0x0000000020000034        0x1 Perpherial/Src/bluetooth.o
+                0x0000000020000034                space
+ .data.count    0x0000000020000035        0x1 Perpherial/Src/dht11.o
+                0x0000000020000035                count
+                0x0000000020000038                . = ALIGN (0x4)
+ *fill*         0x0000000020000036        0x2 
+                0x0000000020000038                _edata = .
 
-.igot.plt       0x0000000020000018        0x0 load address 0x0000000008003bf8
- .igot.plt      0x0000000020000018        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
-                0x0000000020000018                . = ALIGN (0x4)
+.igot.plt       0x0000000020000038        0x0 load address 0x0000000008003e3c
+ .igot.plt      0x0000000020000038        0x0 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+                0x0000000020000038                . = ALIGN (0x4)
 
-.bss            0x0000000020000018      0x104 load address 0x0000000008003bf8
-                0x0000000020000018                _sbss = .
-                0x0000000020000018                __bss_start__ = _sbss
+.bss            0x0000000020000038      0x104 load address 0x0000000008003e3c
+                0x0000000020000038                _sbss = .
+                0x0000000020000038                __bss_start__ = _sbss
  *(.bss)
- .bss           0x0000000020000018       0x1c d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
+ .bss           0x0000000020000038       0x1c d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtbegin.o
  *(.bss*)
  .bss.dht11_data
-                0x0000000020000034        0x5 Perpherial/Src/dht11.o
-                0x0000000020000034                dht11_data
- *fill*         0x0000000020000039        0x1 
+                0x0000000020000054        0x5 Perpherial/Src/dht11.o
+                0x0000000020000054                dht11_data
+ *fill*         0x0000000020000059        0x1 
  .bss.gy30_data
-                0x000000002000003a        0x2 Perpherial/Src/gy30.o
-                0x000000002000003a                gy30_data
+                0x000000002000005a        0x2 Perpherial/Src/gy30.o
+                0x000000002000005a                gy30_data
  *(COMMON)
- COMMON         0x000000002000003c       0xdc Core/Src/main.o
-                0x000000002000003c                hi2c2
-                0x0000000020000090                huart1
-                0x00000000200000d0                htim2
- COMMON         0x0000000020000118        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                0x0000000020000118                uwTick
-                0x000000002000011c                . = ALIGN (0x4)
-                0x000000002000011c                _ebss = .
-                0x000000002000011c                __bss_end__ = _ebss
+ COMMON         0x000000002000005c       0xdc Core/Src/main.o
+                0x000000002000005c                hi2c2
+                0x00000000200000b0                huart1
+                0x00000000200000f0                htim2
+ COMMON         0x0000000020000138        0x4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                0x0000000020000138                uwTick
+                0x000000002000013c                . = ALIGN (0x4)
+                0x000000002000013c                _ebss = .
+                0x000000002000013c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x000000002000011c      0x604 load address 0x0000000008003bf8
-                0x0000000020000120                . = ALIGN (0x8)
- *fill*         0x000000002000011c        0x4 
+                0x000000002000013c      0x604 load address 0x0000000008003e3c
+                0x0000000020000140                . = ALIGN (0x8)
+ *fill*         0x000000002000013c        0x4 
                 [!provide]                        PROVIDE (end = .)
-                0x0000000020000120                PROVIDE (_end = .)
-                0x0000000020000320                . = (. + _Min_Heap_Size)
- *fill*         0x0000000020000120      0x200 
-                0x0000000020000720                . = (. + _Min_Stack_Size)
- *fill*         0x0000000020000320      0x400 
-                0x0000000020000720                . = ALIGN (0x8)
+                0x0000000020000140                PROVIDE (_end = .)
+                0x0000000020000340                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000140      0x200 
+                0x0000000020000740                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000340      0x400 
+                0x0000000020000740                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -3615,7 +3635,7 @@ LOAD d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externa
                 0x0000000000000428       0x1d d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/crtn.o
 OUTPUT(DHT11_TEST.elf elf32-littlearm)
 
-.debug_info     0x0000000000000000    0x10e10
+.debug_info     0x0000000000000000    0x10ecb
  .debug_info    0x0000000000000000     0x179e Core/Src/main.o
  .debug_info    0x000000000000179e     0x180a Core/Src/stm32f1xx_hal_msp.o
  .debug_info    0x0000000000002fa8     0x117b Core/Src/stm32f1xx_it.o
@@ -3630,10 +3650,10 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_info    0x00000000000091f4     0x27ef Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_info    0x000000000000b9e3     0x136f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_info    0x000000000000cd52     0x121b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
- .debug_info    0x000000000000df6d      0x62c Perpherial/Src/bluetooth.o
- .debug_info    0x000000000000e599      0xafc Perpherial/Src/dht11.o
- .debug_info    0x000000000000f095      0xe81 Perpherial/Src/gy30.o
- .debug_info    0x000000000000ff16      0xefa Perpherial/Src/lcd1602.o
+ .debug_info    0x000000000000df6d      0x6e7 Perpherial/Src/bluetooth.o
+ .debug_info    0x000000000000e654      0xafc Perpherial/Src/dht11.o
+ .debug_info    0x000000000000f150      0xe81 Perpherial/Src/gy30.o
+ .debug_info    0x000000000000ffd1      0xefa Perpherial/Src/lcd1602.o
 
 .debug_abbrev   0x0000000000000000     0x2274
  .debug_abbrev  0x0000000000000000      0x270 Core/Src/main.o
@@ -3655,7 +3675,7 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_abbrev  0x0000000000001eb7      0x1cb Perpherial/Src/gy30.o
  .debug_abbrev  0x0000000000002082      0x1f2 Perpherial/Src/lcd1602.o
 
-.debug_aranges  0x0000000000000000      0xf10
+.debug_aranges  0x0000000000000000      0xf20
  .debug_aranges
                 0x0000000000000000       0x50 Core/Src/main.o
  .debug_aranges
@@ -3685,15 +3705,15 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_aranges
                 0x0000000000000c80      0x1d0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
  .debug_aranges
-                0x0000000000000e50       0x28 Perpherial/Src/bluetooth.o
+                0x0000000000000e50       0x38 Perpherial/Src/bluetooth.o
  .debug_aranges
-                0x0000000000000e78       0x30 Perpherial/Src/dht11.o
+                0x0000000000000e88       0x30 Perpherial/Src/dht11.o
  .debug_aranges
-                0x0000000000000ea8       0x20 Perpherial/Src/gy30.o
+                0x0000000000000eb8       0x20 Perpherial/Src/gy30.o
  .debug_aranges
-                0x0000000000000ec8       0x48 Perpherial/Src/lcd1602.o
+                0x0000000000000ed8       0x48 Perpherial/Src/lcd1602.o
 
-.debug_ranges   0x0000000000000000      0xe20
+.debug_ranges   0x0000000000000000      0xe30
  .debug_ranges  0x0000000000000000       0x40 Core/Src/main.o
  .debug_ranges  0x0000000000000040       0x40 Core/Src/stm32f1xx_hal_msp.o
  .debug_ranges  0x0000000000000080       0x60 Core/Src/stm32f1xx_it.o
@@ -3708,10 +3728,10 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_ranges  0x00000000000006c8      0x3c0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_ranges  0x0000000000000a88      0x158 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_ranges  0x0000000000000be0      0x1c0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
- .debug_ranges  0x0000000000000da0       0x18 Perpherial/Src/bluetooth.o
- .debug_ranges  0x0000000000000db8       0x20 Perpherial/Src/dht11.o
- .debug_ranges  0x0000000000000dd8       0x10 Perpherial/Src/gy30.o
- .debug_ranges  0x0000000000000de8       0x38 Perpherial/Src/lcd1602.o
+ .debug_ranges  0x0000000000000da0       0x28 Perpherial/Src/bluetooth.o
+ .debug_ranges  0x0000000000000dc8       0x20 Perpherial/Src/dht11.o
+ .debug_ranges  0x0000000000000de8       0x10 Perpherial/Src/gy30.o
+ .debug_ranges  0x0000000000000df8       0x38 Perpherial/Src/lcd1602.o
 
 .debug_macro    0x0000000000000000    0x18472
  .debug_macro   0x0000000000000000      0x2a8 Core/Src/main.o
@@ -3786,7 +3806,7 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_macro   0x0000000000018195      0x2bb Perpherial/Src/lcd1602.o
  .debug_macro   0x0000000000018450       0x22 Perpherial/Src/lcd1602.o
 
-.debug_line     0x0000000000000000     0xceef
+.debug_line     0x0000000000000000     0xcf29
  .debug_line    0x0000000000000000      0x929 Core/Src/main.o
  .debug_line    0x0000000000000929      0x8d6 Core/Src/stm32f1xx_hal_msp.o
  .debug_line    0x00000000000011ff      0x912 Core/Src/stm32f1xx_it.o
@@ -3801,12 +3821,12 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_line    0x0000000000006c0b     0x1fb6 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_line    0x0000000000008bc1     0x12c4 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_line    0x0000000000009e85      0xf9b Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
- .debug_line    0x000000000000ae20      0x6df Perpherial/Src/bluetooth.o
- .debug_line    0x000000000000b4ff      0x8ce Perpherial/Src/dht11.o
- .debug_line    0x000000000000bdcd      0x846 Perpherial/Src/gy30.o
- .debug_line    0x000000000000c613      0x8dc Perpherial/Src/lcd1602.o
+ .debug_line    0x000000000000ae20      0x719 Perpherial/Src/bluetooth.o
+ .debug_line    0x000000000000b539      0x8ce Perpherial/Src/dht11.o
+ .debug_line    0x000000000000be07      0x846 Perpherial/Src/gy30.o
+ .debug_line    0x000000000000c64d      0x8dc Perpherial/Src/lcd1602.o
 
-.debug_str      0x0000000000000000    0x8b79c
+.debug_str      0x0000000000000000    0x8b7fa
  .debug_str     0x0000000000000000    0x8803f Core/Src/main.o
                                       0x8851f (size before relaxing)
  .debug_str     0x000000000008803f      0x345 Core/Src/stm32f1xx_hal_msp.o
@@ -3821,27 +3841,27 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
                                       0x84e3b (size before relaxing)
  .debug_str     0x00000000000887ef      0x300 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
                                       0x84e43 (size before relaxing)
- .debug_str     0x0000000000088aef      0x235 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_str     0x0000000000088aef      0x230 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
                                       0x84b85 (size before relaxing)
- .debug_str     0x0000000000088d24      0x31f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_str     0x0000000000088d1f      0x31f Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
                                       0x84b6e (size before relaxing)
- .debug_str     0x0000000000089043      0xb55 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
+ .debug_str     0x000000000008903e      0xb55 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
                                       0x857e6 (size before relaxing)
- .debug_str     0x0000000000089b98      0x244 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_str     0x0000000000089b93      0x244 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
                                       0x84ba7 (size before relaxing)
- .debug_str     0x0000000000089ddc      0xde0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_str     0x0000000000089dd7      0xde0 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
                                       0x85b79 (size before relaxing)
- .debug_str     0x000000000008abbc      0x517 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_str     0x000000000008abb7      0x517 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
                                       0x85353 (size before relaxing)
- .debug_str     0x000000000008b0d3      0x51e Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+ .debug_str     0x000000000008b0ce      0x51e Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
                                       0x850ad (size before relaxing)
- .debug_str     0x000000000008b5f1       0x5f Perpherial/Src/bluetooth.o
-                                      0x84b3c (size before relaxing)
- .debug_str     0x000000000008b650       0x61 Perpherial/Src/dht11.o
+ .debug_str     0x000000000008b5ec       0xc2 Perpherial/Src/bluetooth.o
+                                      0x84b9f (size before relaxing)
+ .debug_str     0x000000000008b6ae       0x61 Perpherial/Src/dht11.o
                                       0x879d5 (size before relaxing)
- .debug_str     0x000000000008b6b1       0x30 Perpherial/Src/gy30.o
+ .debug_str     0x000000000008b70f       0x30 Perpherial/Src/gy30.o
                                       0x87dc5 (size before relaxing)
- .debug_str     0x000000000008b6e1       0xbb Perpherial/Src/lcd1602.o
+ .debug_str     0x000000000008b73f       0xbb Perpherial/Src/lcd1602.o
                                       0x87db2 (size before relaxing)
 
 .comment        0x0000000000000000       0x7b
@@ -3864,7 +3884,7 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .comment       0x000000000000007b       0x7c Perpherial/Src/gy30.o
  .comment       0x000000000000007b       0x7c Perpherial/Src/lcd1602.o
 
-.debug_frame    0x0000000000000000     0x3f10
+.debug_frame    0x0000000000000000     0x3f58
  .debug_frame   0x0000000000000000       0xf0 Core/Src/main.o
  .debug_frame   0x00000000000000f0      0x110 Core/Src/stm32f1xx_hal_msp.o
  .debug_frame   0x0000000000000200      0x144 Core/Src/stm32f1xx_it.o
@@ -3878,9 +3898,9 @@ OUTPUT(DHT11_TEST.elf elf32-littlearm)
  .debug_frame   0x0000000000001cbc     0x11b8 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_frame   0x0000000000002e74      0x638 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_frame   0x00000000000034ac      0x834 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
- .debug_frame   0x0000000000003ce0       0x50 Perpherial/Src/bluetooth.o
- .debug_frame   0x0000000000003d30       0x80 Perpherial/Src/dht11.o
- .debug_frame   0x0000000000003db0       0x34 Perpherial/Src/gy30.o
- .debug_frame   0x0000000000003de4       0xe0 Perpherial/Src/lcd1602.o
- .debug_frame   0x0000000000003ec4       0x2c d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000000000003ef0       0x20 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000003ce0       0x98 Perpherial/Src/bluetooth.o
+ .debug_frame   0x0000000000003d78       0x80 Perpherial/Src/dht11.o
+ .debug_frame   0x0000000000003df8       0x34 Perpherial/Src/gy30.o
+ .debug_frame   0x0000000000003e2c       0xe0 Perpherial/Src/lcd1602.o
+ .debug_frame   0x0000000000003f0c       0x2c d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000000000003f38       0x20 d:/stm32cubeide_1.4.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.4.0.202007081208/tools/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libc_nano.a(lib_a-memset.o)
