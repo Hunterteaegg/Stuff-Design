@@ -74,7 +74,7 @@ void lcd_show_dht11(uint8_t *result)
 	lcd_writeData((result[3] / 100)+48);
 	lcd_writeData((result[3] % 100 / 10)+48);
 	lcd_writeData((result[3] % 10)+48);
-	lcd_writeData(0xEB);
+	lcd_writeData(0xDF);
 	lcd_writeData('C');
 
 	HAL_Delay(1000);

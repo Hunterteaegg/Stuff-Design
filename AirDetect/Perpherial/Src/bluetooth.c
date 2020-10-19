@@ -11,12 +11,15 @@ extern UART_HandleTypeDef huart1;
 extern uint8_t dht11_data[5];
 extern uint16_t gy30_data;
 
+/*annotations*/
 uint8_t string_humidity[]="humidity:";
 uint8_t string_temperature[]="temperature:";
 uint8_t string_luminance[]="luminance:";
 
+/*control-type characters*/
 uint8_t line_feed='\n';
 uint8_t space=' ';
+
 
 void bluetooth_transmit_humi(void)
 {

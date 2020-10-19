@@ -1,4 +1,4 @@
-bluetooth.c:21:6:bluetooth_transmit_humi	16	static
-bluetooth.c:34:6:bluetooth_transmit_temp	16	static
-bluetooth.c:50:6:bluetooth_transmit_luminance	16	static
-bluetooth.c:66:6:bluetooth_transmit	8	static
+bluetooth.c:24:6:bluetooth_transmit_humi	16	static
+bluetooth.c:37:6:bluetooth_transmit_temp	16	static
+bluetooth.c:53:6:bluetooth_transmit_luminance	16	static
+bluetooth.c:69:6:bluetooth_transmit	8	static
