@@ -36,6 +36,7 @@ extern "C" {
 #include "dht11.h"
 #include "gy30.h"
 #include "bluetooth.h"
+#include "bmp280.h"
 #include <string.h>
 /* USER CODE END Includes */
 

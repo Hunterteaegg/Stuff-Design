@@ -31,27 +31,27 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-DHT11_TEST.elf \
+AirDetect.elf \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-DHT11_TEST.list \
+AirDetect.list \
 
 OBJCOPY_HEX += \
-DHT11_TEST.hex \
+AirDetect.hex \
 
 OBJCOPY_BIN += \
-DHT11_TEST.bin \
+AirDetect.bin \
 
 
 # All Target
-all: DHT11_TEST.elf secondary-outputs
+all: AirDetect.elf secondary-outputs
 
 # Tool invocations
-DHT11_TEST.elf: $(OBJS) $(USER_OBJS) C:\Users\10094\STM32CubeIDE\workspace_1.4.0\DHT11_TEST\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "DHT11_TEST.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\10094\STM32CubeIDE\workspace_1.4.0\DHT11_TEST\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DHT11_TEST.map" -Wl,--gc-sections -static -L"C:\Users\10094\STM32CubeIDE\workspace_1.4.0\DHT11_TEST\Perpherial\Src" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+AirDetect.elf: $(OBJS) $(USER_OBJS) E:\MyCode\AirDetect\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "AirDetect.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\MyCode\AirDetect\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AirDetect.map" -Wl,--gc-sections -static -L"E:\MyCode\AirDetect\Perpherial\Src" --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -60,18 +60,18 @@ default.size.stdout: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-DHT11_TEST.list: $(EXECUTABLES)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "DHT11_TEST.list"
+AirDetect.list: $(EXECUTABLES)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "AirDetect.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-DHT11_TEST.hex: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "DHT11_TEST.hex"
+AirDetect.hex: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O ihex $(EXECUTABLES) "AirDetect.hex"
 	@echo 'Finished building: $@'
 	@echo ' '
 
-DHT11_TEST.bin: $(EXECUTABLES)
-	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "DHT11_TEST.bin"
+AirDetect.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "AirDetect.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 

@@ -8,6 +8,7 @@
 #include "lcd1602.h"
 #include <stdbool.h>
 #include "stm32f1xx_hal.h"
+#include "bmp280.h"
 
 extern uint8_t receiveBuffer;
 extern UART_HandleTypeDef huart1;
@@ -68,6 +69,7 @@ void lcd_show_dht11(uint8_t *result)
 	lcd_writeData('%');
 	lcd_writeData(' ');
 
+	/*
 	lcd_writeData((result[2] / 10)+48);
 	lcd_writeData((result[2] % 10)+48);
 	lcd_writeData('.');
@@ -76,6 +78,7 @@ void lcd_show_dht11(uint8_t *result)
 	lcd_writeData((result[3] % 10)+48);
 	lcd_writeData(0xDF);
 	lcd_writeData('C');
+	*/
 
 	HAL_Delay(1000);
 }
@@ -93,3 +96,29 @@ void lcd_show_gy30(uint16_t result)
 	HAL_Delay(1000);
 }
 
+void lcd_show_bmp280_temp(uint32_t result)
+{
+	lcd_writeData((result /1000)+48);
+	lcd_writeData((result % 1000 / 100)+48);
+	lcd_writeData('.');
+	lcd_writeData((result % 100 / 10)+48);
+	lcd_writeData((result % 10)+48);
+	lcd_writeData(0xDF);
+	lcd_writeData('C');
+	lcd_writeData(' ');
+}
+
+void lcd_show_bmp280_press(uint32_t result)
+{
+	lcd_writeData((result / 100000)+48);
+	lcd_writeData((result % 100000 / 10000)+48);
+	lcd_writeData((result % 10000 / 1000)+48);
+	lcd_writeData((result % 1000 / 100)+48);
+	lcd_writeData('.');
+	lcd_writeData((result % 100 /10)+48);
+	lcd_writeData((result % 10)+48);
+	lcd_writeData('h');
+	lcd_writeData('P');
+	lcd_writeData('a');
+	lcd_writeData(' ');
+}

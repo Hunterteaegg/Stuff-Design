@@ -46,6 +46,7 @@ TIM_HandleTypeDef htim2;
 
 UART_HandleTypeDef huart1;
 
+char string_LUX[]=" LUX";
 /* USER CODE BEGIN PV */
 extern uint8_t dht11_data[5];
 extern uint16_t gy30_data;
@@ -98,8 +99,17 @@ int main(void)
   MX_TIM2_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  BMP280_SETTINGS bmp280={
+  		.powermode=POWER_MODE_NORMAL,
+  		.oversampling_temp=OVERSAMPLING_x1,
+  		.oversampling_press=OVERSAMPLING_x4,
+  		.standy_time=STANDBY_TIME_005,
+  		.filter_coefficient=FILTER_MODE_4,
+  		.spi3w=SPI3W_DISABLE,
+  };
 
   lcd_init();
+  BMP280_init(bmp280);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -110,10 +120,23 @@ int main(void)
 
 	  lcd_writeCom(0x80);
 
+	  getDig_T();
+	  getDig_P();
+
+	  int32_t temp=bmp280_compensate_T_int32(BMP280_temp_read());
+	  lcd_show_bmp280_temp(temp);
+
 	  DHT11_read();
 	  lcd_show_dht11(dht11_data);
 
+	  for(uint8_t i=0;i<strlen(string_LUX);i++)
+	  {
+		  lcd_writeData(string_LUX[i]);
+	  }
 	  lcd_writeCom(0x80|0x40);
+
+	  uint32_t press=bmp280_compensate_P_int32(BMP280_press_read());
+	  lcd_show_bmp280_press(press);
 
 	  GY30_read();
 	  lcd_show_gy30(gy30_data);

@@ -1,6 +1,6 @@
 Perpherial/Src/gy30.o: ../Perpherial/Src/gy30.c \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/gy30.h \
- ../Core/Inc/main.h ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
+ E:/MyCode/AirDetect/Perpherial/Inc/gy30.h ../Core/Inc/main.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h \
@@ -26,11 +26,12 @@ Perpherial/Src/gy30.o: ../Perpherial/Src/gy30.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/lcd1602.h \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/dht11.h \
- C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/bluetooth.h
+ E:/MyCode/AirDetect/Perpherial/Inc/lcd1602.h \
+ E:/MyCode/AirDetect/Perpherial/Inc/dht11.h \
+ E:/MyCode/AirDetect/Perpherial/Inc/bluetooth.h \
+ E:/MyCode/AirDetect/Perpherial/Inc/bmp280.h
 
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/gy30.h:
+E:/MyCode/AirDetect/Perpherial/Inc/gy30.h:
 
 ../Core/Inc/main.h:
 
@@ -86,8 +87,10 @@ C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/gy30.h:
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
 
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/lcd1602.h:
+E:/MyCode/AirDetect/Perpherial/Inc/lcd1602.h:
 
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/dht11.h:
+E:/MyCode/AirDetect/Perpherial/Inc/dht11.h:
 
-C:/Users/10094/STM32CubeIDE/workspace_1.4.0/DHT11_TEST/Perpherial/Inc/bluetooth.h:
+E:/MyCode/AirDetect/Perpherial/Inc/bluetooth.h:
+
+E:/MyCode/AirDetect/Perpherial/Inc/bmp280.h:

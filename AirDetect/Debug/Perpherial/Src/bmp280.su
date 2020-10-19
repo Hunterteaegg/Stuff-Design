@@ -1,0 +1,8 @@
+bmp280.c:12:6:BMP280_init	40	static
+bmp280.c:21:10:BMP280_temp_read	48	static
+bmp280.c:39:6:getDig_T	32	static
+bmp280.c:59:9:bmp280_compensate_T_int32	32	static
+bmp280.c:71:10:BMP280_press_read	48	static
+bmp280.c:89:6:getDig_P	32	static
+bmp280.c:131:10:bmp280_compensate_P_int64	64	static
+bmp280.c:153:10:bmp280_compensate_P_int32	32	static

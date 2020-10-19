@@ -1,4 +1,5 @@
-Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
+Perpherial/Src/bmp280.o: ../Perpherial/Src/bmp280.c \
+ E:/MyCode/AirDetect/Perpherial/Inc/bmp280.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -28,8 +29,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  E:/MyCode/AirDetect/Perpherial/Inc/lcd1602.h \
  E:/MyCode/AirDetect/Perpherial/Inc/dht11.h \
  E:/MyCode/AirDetect/Perpherial/Inc/gy30.h \
- E:/MyCode/AirDetect/Perpherial/Inc/bluetooth.h \
- E:/MyCode/AirDetect/Perpherial/Inc/bmp280.h
+ E:/MyCode/AirDetect/Perpherial/Inc/bluetooth.h
+
+E:/MyCode/AirDetect/Perpherial/Inc/bmp280.h:
 
 ../Core/Inc/main.h:
 
@@ -92,5 +94,3 @@ E:/MyCode/AirDetect/Perpherial/Inc/dht11.h:
 E:/MyCode/AirDetect/Perpherial/Inc/gy30.h:
 
 E:/MyCode/AirDetect/Perpherial/Inc/bluetooth.h:
-
-E:/MyCode/AirDetect/Perpherial/Inc/bmp280.h:
