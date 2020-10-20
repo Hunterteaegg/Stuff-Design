@@ -36,6 +36,7 @@ extern "C" {
 #include "hx711.h"
 #include "calibration.h"
 #include <string.h>
+#include "bluetooth.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

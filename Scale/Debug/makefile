@@ -49,8 +49,8 @@ Scale.bin \
 all: Scale.elf secondary-outputs
 
 # Tool invocations
-Scale.elf: $(OBJS) $(USER_OBJS) C:\Users\10094\STM32CubeIDE\workspace_1.4.0\Scale\STM32F103C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "Scale.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\10094\STM32CubeIDE\workspace_1.4.0\Scale\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Scale.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Scale.elf: $(OBJS) $(USER_OBJS) E:\MyCode\Scale\STM32F103C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "Scale.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"E:\MyCode\Scale\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Scale.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

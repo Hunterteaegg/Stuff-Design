@@ -23,7 +23,9 @@ Core/Src/hx711.o: ../Core/Src/hx711.c ../Core/Inc/hx711.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/lcd1602.h ../Core/Inc/hx711.h ../Core/Inc/calibration.h
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
+ ../Core/Inc/lcd1602.h ../Core/Inc/hx711.h ../Core/Inc/calibration.h \
+ ../Core/Inc/bluetooth.h
 
 ../Core/Inc/hx711.h:
 
@@ -77,8 +79,12 @@ Core/Src/hx711.o: ../Core/Src/hx711.c ../Core/Inc/hx711.h \
 
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:
+
 ../Core/Inc/lcd1602.h:
 
 ../Core/Inc/hx711.h:
 
 ../Core/Inc/calibration.h:
+
+../Core/Inc/bluetooth.h:
